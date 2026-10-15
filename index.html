@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Паломнические поездки по Грузии | Individual Tours in Georgia</title>
+    <meta name="description" content="Индивидуальные паломнические туры и трансферы по святым местам Грузии из Мцхеты и Тбилиси на комфортном автомобиле VW Caddy с русским водителем.">
+    <meta name="keywords" content="паломничество грузия, святые места грузии, паломнические туры, экскурсии по святым местам, православная грузия, мцхета туры, джвари светицховели, монастырь самтавро мощи гавриила, шиомгвиме экскурсия, из тбилиси в мцхету, монастырь бодбе святая нино, давид гареджи монастырь, гелати кутаиси, моцамета, мартвили монастырь, кватахьеви, зедазени, трансфер казбеги боржоми, военно грузинская дорога экскурсия, поездка к казбеку, аэропорт тбилиси трансфер, аэропорт кутаиси, трансфер тбилиси батуми, кахетия сигнахи телави, уплисцихе, рача туры, вардзия, русский водитель тбилиси, индивидуальные поездки грузия, русский гид мцхета, аренда авто с водителем тбилиси, минивэн фургон для туристов грузия">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Roboto, sans-serif; scroll-behavior: smooth; }
+        body { background-color: #f0f4f8; color: #2c3e50; line-height: 1.6; }
+        .top-bar { background: #ffffff; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e2e8f0; font-size: 0.9rem; }
+        .top-info { display: flex; gap: 20px; color: #4a5568; }
+        navbar { background: #1a365d; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 12px rgba(0,0,0,0.1); display: flex; justify-content: space-between; align-items: center; padding: 0 20px; height: 60px; }
+        .logo { color: #fff; font-weight: 700; font-size: 1.2rem; text-decoration: none; }
+        .nav-container { display: flex; align-items: center; gap: 25px; }
+        .nav-links { display: flex; list-style: none; gap: 20px; }
+        .nav-links a { color: #e2e8f0; text-decoration: none; font-size: 0.95rem; font-weight: 500; padding: 20px 0; transition: color 0.2s; }
+        .nav-links a:hover { color: #fff; }
+        .lang-switch { display: flex; gap: 5px; background: #2d3748; padding: 4px; border-radius: 6px; }
+        .lang-btn { background: none; border: none; color: #a0aec0; padding: 4px 10px; font-size: 0.85rem; font-weight: 600; cursor: pointer; border-radius: 4px; transition: all 0.2s; }
+        .lang-btn.active { background: #ecc94b; color: #1a365d; }
+        .hero { background: linear-gradient(rgba(26, 54, 93, 0.75), rgba(26, 54, 93, 0.75)), #2d3748; height: 50vh; color: white; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 20px; }
+        .hero-tag { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px; color: #ecc94b; margin-bottom: 15px; font-weight: 600; }
+        .hero h2 { font-size: 2.1rem; max-width: 800px; margin-bottom: 20px; font-weight: 700; line-height: 1.4; }
+        .hero p { font-size: 1rem; max-width: 600px; opacity: 0.9; }
+        .container { max-width: 900px; margin: 40px auto; padding: 0 15px; }
+        .grid-layout { display: grid; grid-template-columns: 1fr; gap: 25px; }
+        .card { background: white; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.04); padding: 30px; border-left: 5px solid #1a365d; }
+        .card-icon { font-size: 2.5rem; margin-bottom: 10px; background: #ebf8ff; display: inline-block; padding: 10px 20px; border-radius: 12px; }
+        h3 { font-size: 1.4rem; margin-bottom: 15px; color: #1a365d; }
+        .features-list { list-style: none; margin-top: 15px; }
+        .features-list li { margin-bottom: 12px; position: relative; padding-left: 25px; font-size: 1rem; color: #2d3748; }
+        .features-list li::before { content: "✨"; position: absolute; left: 0; top: 2px; }
+        .btn-container { display: flex; gap: 15px; margin-top: 25px; }
+        .btn { flex: 1; display: flex; justify-content: center; align-items: center; gap: 8px; padding: 15px; border-radius: 10px; font-size: 1.05rem; font-weight: 600; text-decoration: none; color: white; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: transform 0.2s; }
+        .btn:active { transform: scale(0.98); }
+        .btn-tg { background-color: #0088cc; }
+        .btn-wa { background-color: #25d366; }
+        .footer { text-align: center; color: #718096; font-size: 0.85rem; margin-top: 60px; border-top: 1px solid #e2e8f0; padding-top: 20px; }
+        .lang-en, [data-lang="en"] { display: none !important; }
+        @media (max-width: 650px) {
+            .top-bar { display: none; }
+            navbar { height: auto; padding: 15px 20px; flex-direction: column; gap: 15px; }
+            .nav-container { flex-direction: column; gap: 15px; width: 100%; }
+            .nav-links { gap: 15px; flex-wrap: wrap; justify-content: center; }
+            .nav-links a { padding: 5px 10px; font-size: 0.9rem; }
+            .hero h2 { font-size: 1.5rem; }
+            .btn-container { flex-direction: column; gap: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="top-info">
+            <span class="lang-ru">📞 Позвонить: +995 500 338 189</span>
+            <span class="lang-en">📞 Call/Text: +995 500 338 189</span>
+            <span class="lang-ru">📍 Локация: Мцхета, Грузия</span>
+            <span class="lang-en">📍 Location: Mtskheta, Georgia</span>
+        </div>
+        <div style="color: #718096;" class="lang-ru">Язык: Русский 🇷🇺</div>
+        <div style="color: #718096;" class="lang-en">Language: English 🇬🇧</div>
+    </div>
+    <navbar id="home">
+        <a href="#home" class="logo">⛪ Georgian Palomnik</a>
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="#home" class="lang-ru">Главная</a><a href="#home" class="lang-en">Home</a></li>
+                <li><a href="#routes" class="lang-ru">Наши Маршруты</a><a href="#routes" class="lang-en">Our Routes</a></li>
+                <li><a href="#about" class="lang-ru">О машине</a><a href="#about" class="lang-en">About Car</a></li>
+                <li><a href="#contacts" class="lang-ru">Контакты</a><a href="#contacts" class="lang-en">Contacts</a></li>
+            </ul>
+            <div class="lang-switch">
+                <button class="lang-btn active" onclick="setLang('ru')">RU</button>
+                <button class="lang-btn" onclick="setLang('en')">EN</button>
+            </div>
+        </div>
+    </navbar>
+    <div class="hero">
+        <div class="hero-tag lang-ru">Добро пожаловать</div>
+        <div class="hero-tag lang-en">Welcome to Georgia</div>
+        <h2 data-lang="ru">Индивидуальные паломнические поездки по святыням Грузии на автомобиле</h2>
+        <h2 data-lang="en">Individual pilgrimage and private tours around Georgia by car</h2>
+        <p data-lang="ru">Надежные и душевные маршруты из древней столицы Мцхета</p>
+        <p data-lang="en">Reliable and soulful tailor-made trips from the ancient capital Mtskheta</p>
+    </div>
+    <div class="container">
+        <div class="grid-layout">
+            <div class="card" id="about">
+                <span class="badge lang-ru">Ваш проводник</span>
+                <span class="badge lang-en">Your Local Guide</span>
+                <div data-lang="ru">
+                    <h3>Обо мне и моем подходе</h3>
+                    <p>Приветствую! Я православный христианин, живу в самом сердце грузинской веры — древнем городе <strong>Мцхете</strong>. С радостью стану вашим водителем и надежным спутником в поездках по намоленным монастырям и главным святыням этой благословенной земли.</p>
+                    <p style="margin-top: 10px;">Я предлагаю честный, спокойный сервис без спешки и суеты: мы остановимся во всех красивых точках для памятных фото, заедем в проверенные вкусные кафе, а время ожидания на локациях всегда полностью бесплатно.</p>
+                </div>
+                <div data-lang="en">
+                    <h3>About Me & My Approach</h3>
+                    <p>Greetings! I am an Orthodox Christian living in the very heart of Georgian faith — the ancient city of <strong>Mtskheta</strong>. I would be glad to become your driver and reliable companion on trips to holy monasteries and main sights of this blessed land.</p>
+                    <p style="margin-top: 10px;">I offer an honest, calm, and soulful service with no rush: we can stop at all beautiful spots for memorable photos, visit verified local restaurants with great food, and waiting time at locations is always completely free.</p>
+                </div>
+            </div>
+            <div class="card" id="routes">
+                <div class="card-icon">🗺️</div>
+                <h3 data-lang="ru">Наши основные направления</h3>
+                <h3 data-lang="en">Our Main Destinations</h3>
+                <ul class="features-list" data-lang="ru">
+                    <li><strong>Святыни Мцхеты:</strong> Монастырь Джвари на вершине горы, собор Светицховели, монастырь Самтавро (к мощам святого Гавриила) и уединенный Шиомгвиме.</li>
+                    <li><strong>Военно-Грузинская дорога:</strong> Путешествие к подножию Казбека. По пути: крепость Ананури, слияние двух Арагви, родина хинкали Пасанаури и Гергетская Троица.</li>
+                    <li><strong>Целебный Боржоми:</strong> Прогулки по красивейшему хвойному национальному парку, дегустация минеральной воды прямо из источников.</li>
+                    <li><strong>Трансферы:</strong> Бережные и пунктуальные встречи и проводы в аэропорты Тбилиси и Кутаиси.</li>
+                </ul>
+                <ul class="features-list" data-lang="en">
+                    <li><strong>Mtskheta & Surroundings:</strong> Jvari Monastery on the mountaintop, majestic Svetitskhoveli Cathedral, Samtavro Convent (to the holy relics of St. Gabriel), and peaceful Shiomgveme Monastery.</li>
+                    <li><strong>Georgian Military Highway:</strong> A breathtaking journey to the foot of Mount Kazbek. On the way: Ananuri Fortress, confluence of two Aragvi rivers, Pasanauri, and Gergeti Trinity Church.</li>
+                    <li><strong>Healing Borjomi:</strong> Walks through the beautiful coniferous national park, tasting of natural mineral water directly from the springs.</li>
+                    <li><strong>Airport Transfers:</strong> Safe and punctual pick-ups and drop-offs to Tbilisi and Kutaisi airports.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="card-icon">🚙</div>
+                <h3 data-lang="ru">О моем автомобиле</h3>
+                <h3 data-lang="en">About My Vehicle</h3>
+                <div data-lang="ru">
+                    <p>Поездки проходят на надежном и очень вместительном немецком автомобиле <strong>VW Caddy</strong>. Он идеально спроектирован под нужды путешественников и паломнических групп до 4 человек:</p>
+                    <ul class="features-list">
+                        <li><strong>Огромное багажное отделение:</strong> Сюда без проблем поместятся любые большие паломнические сумки, чемоданы или детские коляски.</li>
+                        <li><strong>Комфорт в дороге:</strong> Салон всегда в идеальной чистоте. Высокая посадка обеспечивает пассажирам великолепный обзор на горы и храмы по пути.</li>
+                    </ul>
+                </div>
+                <div data-lang="en">
+                    <p>All trips are held in a reliable and very spacious German vehicle — <strong>VW Caddy</strong>. It is perfectly designed for the needs of travelers and small groups up to 4 passengers:</p>
+                    <ul class="features-list">
+                        <li><strong>Huge Luggage Compartment:</strong> Easily fits any large pilgrimage bags, suitcases, or baby strollers without any extra fees.</li>
+                        <li><strong>Comfort on the Road:</strong> The cabin is always kept perfectly clean. The high seating position provides passengers with a magnificent view of mountains and churches right along the way.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card" id="contacts">
+                <div class="card-icon">💬</div>
+                <h3 data-lang="ru">Связаться со мной</h3>
+                <h3 data-lang="en">Get In Touch</h3>
+                <p data-lang="ru">Я с радостью помогу вам составить идеальный индивидуальный маршрут с учетом всех ваших пожеланий. Пишите напрямую в мессенджеры, обсудим детали!</p>
+                <p data-lang="en">I will gladly help you plan the perfect individual itinerary tailored to your wishes. Message me directly to discuss details and available dates!</p>
+                <div class="btn-container">
+                    <a href="https://t.me/alex_smith_ge" target="_blank" class="btn btn-tg" data-lang="ru">Написать в Telegram</a>
+                    <a href="https://t.me/alex_smith_ge" target="_blank" class="btn btn-tg" data-lang="en">Message via Telegram</a>
+                    <a href="https://wa.me/995500338189" target="_blank" class="btn btn-wa" data-lang="ru">Написать в WhatsApp</a>
+                    <a href="https://wa.me/995500338189" target="_blank" class="btn btn-wa" data-lang="en">Message via WhatsApp</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>© 2026 Georgian Palomnik. Все права защищены. Разработано с душой.</p>
+        </div>
+    </div>
+    <script>
+        function setLang(lang) {
+            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+            if (event && event.target) { event.target.classList.add('active'); }
+            if(lang === 'ru') {
+                document.querySelectorAll('[data-lang="ru"]').forEach(el => el.style.setProperty('display', 'block', 'important'));
+                document.querySelectorAll('[data-lang="en"]').forEach(el => el.style.setProperty('display', 'none', 'important'));
+                document.querySelectorAll('.lang-ru').forEach(el => el.style.setProperty('display', 'inline-block', 'important'));
+                document.querySelectorAll('.lang-en').forEach(el => el.style.setProperty('display', 'none', 'important'));
+            } else {
+                document.querySelectorAll('[data-lang="ru"]').forEach(el => el.style.setProperty('display', 'none', 'important'));
+                document.querySelectorAll('[data-lang="en"]').forEach(el => el.style.setProperty('display', 'block', 'important'));
+                document.querySelectorAll('.lang-ru').forEach(el => el.style.setProperty('display', 'none', 'important'));
+                document.querySelectorAll('.lang-en').forEach(el => el.style.setProperty('display', 'inline-block', 'important'));
+            }
+        }
+    </script>
+</body>
+</html>
